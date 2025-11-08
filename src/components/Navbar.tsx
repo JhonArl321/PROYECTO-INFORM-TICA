@@ -21,11 +21,10 @@ function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
           ? "bg-[#005c3c] shadow-xl" // Verde UVG al hacer scroll
           : "bg-[#006341] shadow-lg" // Verde institucional UVG
-      }`}
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
@@ -37,7 +36,7 @@ function Navbar() {
           >
             <div className="bg-white/20 backdrop-blur-md p-2 shadow-lg transition-all duration-300 hover:scale-110 hover:bg-white/30 rounded-lg">
               <img
-                src="/logo/uvg.png"
+                src="/uvg.png"
                 alt="Logo UVG"
                 className="w-12 h-12 object-cover"
               />
