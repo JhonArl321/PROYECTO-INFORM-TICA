@@ -35,11 +35,10 @@ function Navbar() {
             onClick={() => navigateTo("/")}
           >
             <div className="bg-white/20 backdrop-blur-md p-2 shadow-lg transition-all duration-300 hover:scale-110 hover:bg-white/30 rounded-lg">
-              <img
-                src="/uvg.png"
-                alt="Logo UVG"
-                className="w-12 h-12 object-cover"
-              />
+              <img src="/uvg.png" alt="Logo UVG" className="w-12 h-12 object-cover" />
+
+
+
             </div>
 
             <div>
