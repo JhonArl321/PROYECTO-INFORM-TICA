@@ -8,7 +8,7 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
 
-  const navigateTo = (path: string) => {
+  const navigateTo = () => {
     setIsOpen(false)
     window.scrollTo(0, 0)
   }
@@ -32,7 +32,7 @@ function Navbar() {
           <Link
             to="/"
             className="flex items-center space-x-3 group cursor-pointer"
-            onClick={() => navigateTo("/")}
+            onClick={() => navigateTo()}
           >
             <div className="bg-white/20 backdrop-blur-md p-2 shadow-lg transition-all duration-300 hover:scale-110 hover:bg-white/30 rounded-lg">
               <img src="/uvg.png" alt="Logo UVG" className="w-12 h-12 object-cover" />
@@ -58,13 +58,13 @@ function Navbar() {
               { path: "/ayudas", label: "Ayudas Financieras" },
               { path: "/registro", label: "Registro Académico" },
               { path: "/clubes", label: "Clubes" },
-              { path: "/testimonios", label: "Testimonios" },
+              // { path: "/testimonios", label: "Testimonios" },
               { path: "/faq", label: "FAQ" },
             ].map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
-                onClick={() => navigateTo(link.path)}
+                onClick={() => navigateTo()}
                 className="relative px-4 py-2 text-white font-medium hover:bg-white/20 rounded-lg transition-all duration-300 group overflow-hidden"
               >
                 <span className="relative z-10">{link.label}</span>
@@ -74,7 +74,7 @@ function Navbar() {
 
             <Link
               to="/contacto"
-              onClick={() => navigateTo("/contacto")}
+              onClick={() => navigateTo()}
               className="ml-2 px-5 py-2.5 bg-white text-[#006341] font-bold rounded-lg hover:bg-green-50 transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105"
             >
               Contacto
@@ -108,7 +108,7 @@ function Navbar() {
               <Link
                 key={link.path}
                 to={link.path}
-                onClick={() => navigateTo(link.path)}
+                onClick={() => navigateTo()}
                 className="block w-full text-left px-4 py-3 text-white font-medium hover:bg-white/20 rounded-lg transition-all duration-300 backdrop-blur-sm"
               >
                 {link.label}
@@ -117,7 +117,7 @@ function Navbar() {
 
             <Link
               to="/contacto"
-              onClick={() => navigateTo("/contacto")}
+              onClick={() => navigateTo()}
               className="block w-full text-left px-4 py-3 bg-white text-[#006341] font-bold hover:bg-green-50 rounded-lg transition-all duration-300 shadow-md"
             >
               Contacto

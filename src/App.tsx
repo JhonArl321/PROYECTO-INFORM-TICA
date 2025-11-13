@@ -5,9 +5,13 @@ import HomePage from "./pages/HomePage"
 import AyudasPage from "./pages/AyudasPage"
 import RegistroPage from "./pages/RegistroPage"
 import ClubsPage from "./pages/ClubsPage"
-import TestimoniosPage from "./pages/TestimoniosPage"
 import FAQPage from "./pages/FAQPage"
 import ContactoPage from "./pages/ContactoPage"
+
+
+
+
+
 
 function App() {
   return (
@@ -19,7 +23,6 @@ function App() {
           <Route path="/ayudas" element={<AyudasPage />} />
           <Route path="/registro" element={<RegistroPage />} />
           <Route path="/clubes" element={<ClubsPage />} />
-          <Route path="/testimonios" element={<TestimoniosPage />} />
           <Route path="/faq" element={<FAQPage />} />
           <Route path="/contacto" element={<ContactoPage />} />
         </Routes>

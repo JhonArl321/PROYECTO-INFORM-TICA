@@ -134,39 +134,6 @@ function Clubes() {
           </div>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
-          <div className="bg-gradient-to-br from-red-50 to-orange-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow text-center">
-            <div className="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-              <span className="text-3xl">⚽</span>
-            </div>
-            <h4 className="font-bold text-gray-900 mb-2">Deportes</h4>
-            <p className="text-gray-600 text-sm">Fútbol, basketball, atletismo y más</p>
-          </div>
-
-          <div className="bg-gradient-to-br from-purple-50 to-pink-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow text-center">
-            <div className="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-              <span className="text-3xl">🎨</span>
-            </div>
-            <h4 className="font-bold text-gray-900 mb-2">Arte y Cultura</h4>
-            <p className="text-gray-600 text-sm">Música, teatro, pintura, danza</p>
-          </div>
-
-          <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow text-center">
-            <div className="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-              <span className="text-3xl">💻</span>
-            </div>
-            <h4 className="font-bold text-gray-900 mb-2">Tecnología</h4>
-            <p className="text-gray-600 text-sm">Programación, robótica, gaming</p>
-          </div>
-
-          <div className="bg-gradient-to-br from-green-50 to-teal-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow text-center">
-            <div className="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-              <span className="text-3xl">🌱</span>
-            </div>
-            <h4 className="font-bold text-gray-900 mb-2">Medio Ambiente</h4>
-            <p className="text-gray-600 text-sm">Sostenibilidad y ecología</p>
-          </div>
-        </div>
       </div>
     </section>
   );
