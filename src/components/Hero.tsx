@@ -21,6 +21,12 @@ function Hero() {
       image: '/imagen3.jpeg',
       title: 'Oportunidades para Todos',
       subtitle: 'Becas que transforman vidas'
+    },
+
+     {
+      image: '/imagen4.jpeg',
+    title: 'Innovación y Emprendimiento',
+    subtitle: 'Desarrollar prototipos'
     }
 
   ];
