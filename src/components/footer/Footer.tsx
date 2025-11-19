@@ -2,6 +2,7 @@ import ContactInfo from './ContactInfo';
 import SocialLinks from './SocialLinks';
 import QuickLinks from './QuickLinks';
 
+// muestra contacto, enlaces, redes y mensaje de agradecimiento
 const Footer: React.FC = () => {
   return (
     <footer className="bg-gray-900 text-white py-12">

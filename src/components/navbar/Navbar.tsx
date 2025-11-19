@@ -1,17 +1,20 @@
+// Navbar.tsx
 import { useState, useEffect } from "react";
 import NavbarLogo from "./NavbarLogo";
 import NavbarLinksDesktop from "./NavbarLinksDesktop";
 import NavbarLinksMobile from "./NavbarLinksMobile";
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+  const [isOpen, setIsOpen] = useState(false); 
+  const [scrolled, setScrolled] = useState(false); 
 
+  // Cierra menú móvil y vuelve al inicio al navegar
   const navigateTo = () => {
     setIsOpen(false);
     window.scrollTo(0, 0);
   };
 
+  // Detecta scroll para cambiar fondo y sombra
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
     window.addEventListener("scroll", handleScroll);
@@ -24,6 +27,7 @@ export default function Navbar() {
         scrolled ? "bg-[#005c3c] shadow-xl" : "bg-[#006341] shadow-lg"
       }`}
     >
+     
       <div className="px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <NavbarLogo navigateTo={navigateTo} />
@@ -38,6 +42,8 @@ export default function Navbar() {
           </div>
         </div>
       </div>
+      
+      {/* Menú móvil */}
       {isOpen && <NavbarLinksMobile navigateTo={navigateTo} />}
     </nav>
   );

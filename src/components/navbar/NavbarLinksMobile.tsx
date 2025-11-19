@@ -4,6 +4,7 @@ interface NavbarLinksMobileProps {
   navigateTo: () => void;
 }
 
+// Renderiza los enlaces de navegación visibles solo en dispositivos móviles
 export default function NavbarLinksMobile({ navigateTo }: NavbarLinksMobileProps) {
   const links = [
     { path: "/", label: "Inicio" },

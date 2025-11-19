@@ -17,6 +17,7 @@ const slides: Slide[] = [
 const SliderHero: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
+   // Cambiar slide automáticamente cada 3 segundos
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
@@ -30,6 +31,7 @@ const SliderHero: React.FC = () => {
 
   return (
     <div className="relative w-full min-h-screen overflow-hidden">
+        {/* Slides */}
       {slides.map((slide, index) => (
         <div key={index} className={`absolute inset-0 transition-opacity duration-1000 ${index === currentSlide ? 'opacity-100' : 'opacity-0'}`}>
           <img src={slide.image} alt={slide.title} className="w-full h-full object-cover" />
@@ -47,6 +49,7 @@ const SliderHero: React.FC = () => {
       ))}
 
   
+          {/* Botones de navegación */}
       <button onClick={prevSlide} className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/30 hover:bg-white/50 backdrop-blur-sm p-3 rounded-full transition-all duration-300 group z-10">
         <ChevronLeft size={28} className="text-white group-hover:scale-110 transition-transform" />
       </button>

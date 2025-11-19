@@ -1,5 +1,8 @@
 import { Users, Lightbulb, Calendar} from 'lucide-react';
 
+
+// sección de Clubes y Vida Estudiantil: guía para crear clubes y organizar actividades
+
 function Clubes() {
   return (
     <section id="clubes" className="py-20 bg-white">

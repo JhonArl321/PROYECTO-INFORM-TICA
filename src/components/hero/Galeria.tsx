@@ -2,6 +2,8 @@
 import React, { useState, useEffect } from 'react';
 import { Heart } from 'lucide-react';
 
+
+// Array de rutas de imágenes de la galería
 const fotos = [
   '/galeria/galeria1.jpeg',
   '/galeria/galeria2.jpeg',
@@ -14,6 +16,7 @@ const fotos = [
 const Galeria: React.FC = () => {
   const [startIndex, setStartIndex] = useState(0);
 
+  // Cambia la imagen principal automáticamente cada 3 segundos
   useEffect(() => {
     const interval = setInterval(() => {
       setStartIndex((prev) => (prev + 1) % fotos.length);
@@ -21,7 +24,7 @@ const Galeria: React.FC = () => {
     return () => clearInterval(interval);
   }, []);
 
-  // Obtenemos las 4 imágenes visibles (se usarán según el ancho de pantalla)
+  // Selecciona las 4 imágenes visibles para el carrusel
   const visibleFotos = [
     fotos[startIndex % fotos.length],
     fotos[(startIndex + 1) % fotos.length],
@@ -31,6 +34,8 @@ const Galeria: React.FC = () => {
 
   return (
     <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+
+      {/* Título de la sección */}
       <h2 className="text-3xl font-bold text-center mb-8">Nuestra Galería</h2>
 
       <div className="bg-gradient-to-br from-teal-50 to-blue-50 p-8 sm:p-12 rounded-2xl shadow-lg mb-12">
@@ -43,7 +48,7 @@ const Galeria: React.FC = () => {
         </div>
       </div>
 
-      {/* Carrusel responsive */}
+        {/* Carrusel de imágenes */}
       <div className="flex overflow-hidden">
         {visibleFotos.map((foto, index) => (
           <div

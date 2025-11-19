@@ -1,3 +1,5 @@
+
+// Componente que muestra un bloque de contacto adicional al final de la sección FAQ
 export default function FAQContacto() {
   return (
     <div className="mt-12 bg-blue-600 text-white p-8 rounded-xl shadow-lg text-center">

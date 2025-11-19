@@ -1,8 +1,12 @@
 import { Link } from "react-router-dom";
 
+
+
 interface NavbarLogoProps {
   navigateTo: () => void;
 }
+
+// Muestra los logos y redirige al inicio al hacer clic
 
 export default function NavbarLogo({ navigateTo }: NavbarLogoProps) {
   return (

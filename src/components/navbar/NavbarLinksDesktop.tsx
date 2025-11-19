@@ -4,6 +4,10 @@ interface NavbarLinksDesktopProps {
   navigateTo: () => void;
 }
 
+
+
+// Renderiza los enlaces de navegación visibles en escritorio
+
 export default function NavbarLinksDesktop({ navigateTo }: NavbarLinksDesktopProps) {
   const links = [
     { path: "/", label: "Inicio" },
@@ -12,8 +16,11 @@ export default function NavbarLinksDesktop({ navigateTo }: NavbarLinksDesktopPro
     { path: "/faq", label: "FAQ" },
   ];
 
+
   return (
     <div className="hidden md:flex items-center space-x-2">
+
+       {/* Enlaces principales */}
       {links.map((link) => (
         <Link
           key={link.path}

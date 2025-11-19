@@ -1,8 +1,12 @@
+
+// Componente que muestra el mapa de ubicación de UVG Altiplano
 const ContactoMapa: React.FC = () => (
   <div className="mt-16">
     <h3 className="text-2xl sm:text-3xl font-bold text-center text-gray-900 mb-6">
       Encuéntranos en el mapa
     </h3>
+
+      {/* Contenedor del iframe de Google Maps con borde redondeado y sombra */}
     <div className="rounded-2xl overflow-hidden shadow-2xl max-w-5xl mx-auto border border-gray-200">
       <iframe
         title="Ubicación UVG Altiplano"
@@ -14,6 +18,9 @@ const ContactoMapa: React.FC = () => (
         className="w-full"
       ></iframe>
     </div>
+
+
+        {/* Botón para abrir la ubicación directamente en Google Maps */}
     <div className="text-center mt-4">
       <a
         href="https://maps.app.goo.gl/RqUoDvJAWh8uCRUi6"

@@ -1,3 +1,6 @@
+
+
+//muestra información básica de contacto (email y dirección)
 const ContactInfo: React.FC = () => {
   return (
     <div>

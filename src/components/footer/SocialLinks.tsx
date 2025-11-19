@@ -1,5 +1,6 @@
 import { Facebook } from 'lucide-react';
 
+// muestra íconos de redes sociales con enlaces externos
 const SocialLinks: React.FC = () => {
   return (
     <div>

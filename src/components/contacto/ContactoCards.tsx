@@ -1,12 +1,16 @@
 import ContactCard from './ContactCard';
 import { Mail, MessageCircle, MapPin } from 'lucide-react';
 
+
+// Componente que contiene las tres tarjetas principales de contacto
 const ContactoCards: React.FC = () => (
   <div className="grid md:grid-cols-3 gap-8 mb-12">
-    <ContactCard 
-      icon={<Mail size={32} className="text-white" />} 
-      title="Nuestros correos" 
-      bg="bg-gradient-to-br from-green-50 to-teal-50" 
+    
+     {/* Tarjeta de correos institucionales */}
+    <ContactCard
+      icon={<Mail size={32} className="text-white" />}
+      title="Nuestros correos"
+      bg="bg-gradient-to-br from-green-50 to-teal-50"
       border="border border-green-100"
     >
       <p className="text-center text-gray-700 mb-2">Departamento de Becas:</p>
@@ -15,10 +19,11 @@ const ContactoCards: React.FC = () => (
       <p className="block text-center text-green-700 font-semibold hover:text-green-800 transition-colors">gmmacario@uvg.edu.gt</p>
     </ContactCard>
 
-    <ContactCard 
-      icon={<MessageCircle size={32} className="text-white" />} 
-      title="WhatsApp" 
-      bg="bg-gradient-to-br from-blue-50 to-purple-50" 
+    {/* Tarjeta de contacto vía WhatsApp */}
+    <ContactCard
+      icon={<MessageCircle size={32} className="text-white" />}
+      title="WhatsApp"
+      bg="bg-gradient-to-br from-blue-50 to-purple-50"
       border="border border-blue-100"
     >
       <p className="text-center text-gray-700 mb-4">Atención a ayudas financieras</p>
@@ -26,10 +31,11 @@ const ContactoCards: React.FC = () => (
       <p className="text-center text-gray-600 text-sm mt-4">Lunes a Viernes: 8:00 AM - 5:00 PM</p>
     </ContactCard>
 
-    <ContactCard 
-      icon={<MapPin size={32} className="text-white" />} 
-      title="Ubicación" 
-      bg="bg-gradient-to-br from-orange-50 to-red-50" 
+    {/* Tarjeta de ubicación del campus */}
+    <ContactCard
+      icon={<MapPin size={32} className="text-white" />}
+      title="Ubicación"
+      bg="bg-gradient-to-br from-orange-50 to-red-50"
       border="border border-orange-100"
     >
       <p className="text-center text-gray-700 mb-2">Campus Altiplano</p>
@@ -39,4 +45,5 @@ const ContactoCards: React.FC = () => (
   </div>
 );
 
+// Exportación del componente para uso en la sección de contacto
 export default ContactoCards;

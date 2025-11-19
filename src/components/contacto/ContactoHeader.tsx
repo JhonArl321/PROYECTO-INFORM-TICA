@@ -1,5 +1,7 @@
 import { Heart } from 'lucide-react';
 
+
+// Componente que representa el encabezado de la sección de contacto
 const ContactoHeader: React.FC = () => (
   <div className="text-center mb-16">
     <div className="flex justify-center mb-4">
@@ -8,6 +10,9 @@ const ContactoHeader: React.FC = () => (
     <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
       Contacto y Agradecimiento
     </h2>
+
+
+    {/* Texto de agradecimiento con información importante */}
     <div className="max-w-3xl mx-auto">
       <p className="text-lg sm:text-xl text-gray-700 leading-relaxed mb-4">
         Agradecemos profundamente a la <strong className="text-green-700">Universidad del Valle de Guatemala, Campus Altiplano</strong>, por abrir las puertas del conocimiento a cientos de jóvenes.
@@ -19,4 +24,5 @@ const ContactoHeader: React.FC = () => (
   </div>
 );
 
+// Exportación del componente para uso en la sección de contacto
 export default ContactoHeader;

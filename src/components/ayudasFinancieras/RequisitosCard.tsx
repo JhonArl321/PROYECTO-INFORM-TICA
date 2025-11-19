@@ -4,6 +4,8 @@ type Requisito = {
   texto: string;
 };
 
+
+// Lista de requisitos necesarios para mantener o solicitar una beca
 const requisitos: Requisito[] = [
   { texto: "Promedio mínimo de 75 puntos" },
   { texto: "Completar 10 horas de beca por ciclo académico" },
@@ -12,6 +14,8 @@ const requisitos: Requisito[] = [
   { texto: "Mantener conducta ejemplar dentro del campus" },
 ];
 
+
+// Componente RequisitosCard
 export default function RequisitosCard() {
   return (
     <div className="bg-green-50 p-8 rounded-xl shadow-md border border-green-100">
@@ -19,6 +23,8 @@ export default function RequisitosCard() {
         <CheckCircle className="text-green-600 mr-3" size={28} />
         <h3 className="text-2xl font-bold text-gray-900">Requisitos</h3>
       </div>
+      
+        {/* Lista de requisitos con indicador visual */}
       <ul className="space-y-3 text-gray-700">
         {requisitos.map((r, i) => (
           <li key={i} className="flex items-start">

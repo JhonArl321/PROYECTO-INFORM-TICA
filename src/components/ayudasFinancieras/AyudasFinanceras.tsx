@@ -3,6 +3,9 @@ import DocumentosCard from "./DocumentosCard";
 import ErroresComunes from "./ErroresComunes";
 import { Download } from "lucide-react";
 
+
+
+// Componente principal de la sección Ayudas Financieras
 export default function AyudasFinancieras() {
   return (
     <section id="ayudas" className="py-20 bg-white">

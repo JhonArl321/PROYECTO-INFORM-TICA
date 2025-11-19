@@ -3,14 +3,19 @@ import { HelpCircle } from "lucide-react";
 import FAQItem from "./FAQItem";
 import FAQContacto from "./FAQContacto";
 
+
+// Definición de la estructura de datos de cada FAQ
 interface FAQData {
   question: string;
   answer: string;
 }
 
+// Componente principal de la sección FAQ
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
+
+   // Lista de preguntas y respuestas
  const faqs: FAQData[] = [
   {
     question: "¿Qué necesito para aplicar a una beca?",
@@ -66,11 +71,13 @@ export default function FAQ() {
   }
 ];
 
-
+ // Función para alternar la apertura/cierre de una pregunta
   const toggleFAQ = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
+
+    // Renderizado de la sección FAQ
   return (
     <section id="faq" className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -96,6 +103,7 @@ export default function FAQ() {
           ))}
         </div>
 
+      {/* Componente de contacto adicional al final de FAQ */}
         <FAQContacto />
       </div>
     </section>

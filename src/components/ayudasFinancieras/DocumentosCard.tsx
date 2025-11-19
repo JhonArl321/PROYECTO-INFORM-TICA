@@ -1,5 +1,7 @@
 import { FileText } from "lucide-react";
 
+
+// Lista de documentos necesarios para solicitar la ayuda financiera
 const documentos = [
   "Fotocopia de DPI o cédula",
   "Constancia de ingresos familiares",
@@ -8,13 +10,19 @@ const documentos = [
   "Formulario de inscripción completo",
 ];
 
+
+// Componente DocumentosCard
 export default function DocumentosCard() {
   return (
     <div className="bg-blue-50 p-8 rounded-xl shadow-md border border-blue-100">
+
+        {/* Encabezado con icono y título */}
       <div className="flex items-center mb-4">
         <FileText className="text-blue-600 mr-3" size={28} />
         <h3 className="text-2xl font-bold text-gray-900">Documentos Necesarios</h3>
       </div>
+
+        {/* Lista de documentos */}
       <ul className="space-y-3 text-gray-700">
         {documentos.map((d, i) => (
           <li key={i} className="flex items-start">

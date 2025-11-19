@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 
+
+// lista de enlaces internos rápidos para navegar por la web
 const QuickLinks: React.FC = () => {
   return (
     <div>
