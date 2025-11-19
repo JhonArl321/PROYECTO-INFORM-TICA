@@ -19,7 +19,7 @@ function Footer() {
             <h4 className="text-white font-semibold mb-4">Enlaces Rápidos</h4>
             <ul className="space-y-2">
               <li><Link to="/" className="hover:text-green-400 transition-colors">Inicio</Link></li>
-              <li><Link to="/ayudas" className="hover:text-green-400 transition-colors">Ayudas Financieras</Link></li>
+          
               <li><Link to="/registro" className="hover:text-green-400 transition-colors">Registro Académico</Link></li>
               <li><Link to="/clubes" className="hover:text-green-400 transition-colors">Clubes</Link></li>
               <li><Link to="/faq" className="hover:text-green-400 transition-colors">FAQ</Link></li>

@@ -9,7 +9,7 @@ function RegistroAcademico() {
             <ClipboardList size={48} className="text-blue-600" />
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-            Registro Académico
+            Reingreso para el siguiente ciclo académico
           </h2>
           <p className="text-xl text-gray-600">
             Tu proceso de inscripción paso a paso

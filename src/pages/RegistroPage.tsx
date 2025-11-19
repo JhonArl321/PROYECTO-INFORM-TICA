@@ -1,4 +1,4 @@
-import RegistroAcademico from "../components/RegistroAcademico"
+import RegistroAcademico from "../components/Reingreso"
 
 function RegistroPage() {
   return (

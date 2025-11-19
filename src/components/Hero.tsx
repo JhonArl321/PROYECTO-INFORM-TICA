@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { GraduationCap, ChevronLeft, ChevronRight } from 'lucide-react';
+import Clubes from './Clubes';
 
 
 function Hero() {
@@ -63,7 +64,8 @@ function Hero() {
             className={`absolute inset-0 transition-opacity duration-1000 ${index === currentSlide ? 'opacity-100' : 'opacity-0'
               }`}
           >
-            <div className="relative w-full h-full">
+            {/* <div className="relative w-full h-full"> */}
+              <div className="relative w-full min-h-screen">
               <img
                 src={slide.image}
                 alt={slide.title}
@@ -153,7 +155,7 @@ function Hero() {
       </div>
 
 
-          
+        <Clubes />  
 
 
     </section>

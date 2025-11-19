@@ -56,9 +56,7 @@ function Navbar() {
             {[
               { path: "/", label: "Inicio" },
               { path: "/ayudas", label: "Ayudas Financieras" },
-              { path: "/registro", label: "Registro Académico" },
-              { path: "/clubes", label: "Clubes" },
-              // { path: "/testimonios", label: "Testimonios" },
+              { path: "/registro", label: "Reingreso" },
               { path: "/faq", label: "FAQ" },
             ].map((link) => (
               <Link
