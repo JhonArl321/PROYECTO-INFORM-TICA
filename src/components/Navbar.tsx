@@ -21,37 +21,33 @@ function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
-          ? "bg-[#005c3c] shadow-xl" // Verde UVG al hacer scroll
-          : "bg-[#006341] shadow-lg" // Verde institucional UVG
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-[#005c3c] shadow-xl" : "bg-[#006341] shadow-lg"
         }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* QUITAMOS max-w-7xl mx-auto PARA PEGAR EL LOGO A LA IZQUIERDA */}
+      <div className="px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
+
           {/* LOGO + NOMBRE */}
           <Link
             to="/"
-            className="flex items-center space-x-3 group cursor-pointer"
+            className="flex items-center justify-start space-x-3 group cursor-pointer"
             onClick={() => navigateTo()}
           >
             <div className="bg-white/20 backdrop-blur-md p-2 shadow-lg transition-all duration-300 hover:scale-110 hover:bg-white/30 rounded-lg">
-              <img src="/uvg.png" alt="Logo UVG" className="w-12 h-12 object-cover" />
-
-
-
+              <img src="/logo1.jpeg" alt="Logo UVG" className="w-12 h-12 object-cover" />
             </div>
 
-            <div>
-              <h1 className="text-xl sm:text-2xl font-bold text-white drop-shadow-md">
-                UVG Altiplano
-              </h1>
-              <p className="text-xs text-green-100 hidden sm:block">
-                Excelencia que trasciende
-              </p>
+            <div className="flex flex-col justify-center">
+              <img
+                src="/logo2.jpeg"
+                alt="Logo UVG Altiplano"
+                className="h-12 sm:h-16 w-auto object-contain"
+              />
             </div>
           </Link>
 
-          {/* LINKS EN DESKTOP */}
+          {/* LINKS DESKTOP */}
           <div className="hidden md:flex items-center space-x-2">
             {[
               { path: "/", label: "Inicio" },
@@ -73,13 +69,14 @@ function Navbar() {
             <Link
               to="/contacto"
               onClick={() => navigateTo()}
-              className="ml-2 px-5 py-2.5 bg-white text-[#006341] font-bold rounded-lg hover:bg-green-50 transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105"
+              className="ml-2 px-4 py-2 text-white font-semibold  transition-colors duration-300 hover:bg-white/20 rounded-lg "
             >
               Contacto
             </Link>
+
           </div>
 
-          {/* BOTÓN MENU MÓVIL */}
+          {/* BOTÓN MENÚ MÓVIL */}
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -99,10 +96,12 @@ function Navbar() {
               { path: "/", label: "Inicio" },
               { path: "/ayudas", label: "Ayudas Financieras" },
               { path: "/registro", label: "Registro Académico" },
-              { path: "/clubes", label: "Clubes" },
+
               { path: "/testimonios", label: "Testimonios" },
               { path: "/faq", label: "FAQ" },
             ].map((link) => (
+
+
               <Link
                 key={link.path}
                 to={link.path}
@@ -111,15 +110,11 @@ function Navbar() {
               >
                 {link.label}
               </Link>
-            ))}
 
-            <Link
-              to="/contacto"
-              onClick={() => navigateTo()}
-              className="block w-full text-left px-4 py-3 bg-white text-[#006341] font-bold hover:bg-green-50 rounded-lg transition-all duration-300 shadow-md"
-            >
-              Contacto
-            </Link>
+
+
+            ))}
+          
           </div>
         </div>
       )}

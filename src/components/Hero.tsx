@@ -25,10 +25,10 @@ function Hero() {
       subtitle: 'Becas que transforman vidas'
     },
 
-     {
+    {
       image: '/imagen4.jpeg',
-    title: 'Innovación y Emprendimiento',
-    subtitle: 'Desarrollar prototipos'
+      title: 'Innovación y Emprendimiento',
+      subtitle: 'Desarrollar prototipos'
     }
 
   ];
@@ -55,8 +55,8 @@ function Hero() {
 
   return (
     <section id="inicio" className="bg-gradient-to-br from-green-50 to-blue-50">
-  
-        <div className="relative w-full min-h-screen overflow-hidden">
+
+      <div className="relative w-full min-h-screen overflow-hidden">
 
         {slides.map((slide, index) => (
           <div
@@ -64,8 +64,7 @@ function Hero() {
             className={`absolute inset-0 transition-opacity duration-1000 ${index === currentSlide ? 'opacity-100' : 'opacity-0'
               }`}
           >
-            {/* <div className="relative w-full h-full"> */}
-              <div className="relative w-full min-h-screen">
+            <div className="relative w-full h-full">
               <img
                 src={slide.image}
                 alt={slide.title}
@@ -147,15 +146,11 @@ function Hero() {
               e inspirar a futuras generaciones a aprovechar las oportunidades que brinda esta institución.
             </p>
           </div>
-
-
-
-
         </div>
       </div>
 
 
-        <Clubes />  
+      <Clubes />
 
 
     </section>
