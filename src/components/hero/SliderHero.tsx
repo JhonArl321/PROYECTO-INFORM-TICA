@@ -5,13 +5,13 @@ import { GraduationCap, ChevronLeft, ChevronRight } from 'lucide-react';
 type Slide = {
   image: string;
   title: string;
-  subtitle: string;
+ 
 };
 
 const slides: Slide[] = [
-  { image: '/imagen1.jpeg', title: 'Educación de Excelencia', subtitle: 'Formando profesionales del futuro' },
-  { image: '/imagen2.jpeg', title: 'Comunidad Estudiantil', subtitle: 'Unidos por el conocimiento' },
-  { image: '/imagen3.jpeg', title: 'Oportunidades para Todos', subtitle: 'Becas que transforman vidas' }
+  { image: '/imagen1.jpeg', title: 'Educación de Excelencia' },
+  { image: '/imagen2.jpeg', title: 'Comunidad Estudiantil' },
+  { image: '/imagen3.jpeg', title: 'Oportunidades para Todos' }
 ];
 
 const SliderHero: React.FC = () => {
@@ -41,12 +41,12 @@ const SliderHero: React.FC = () => {
               </div>
             </div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 drop-shadow-2xl animate-fade-in">{slide.title}</h2>
-            <p className="text-lg sm:text-xl md:text-2xl font-medium drop-shadow-lg">{slide.subtitle}</p>
+            <p className="text-lg sm:text-xl md:text-2xl font-medium drop-shadow-lg"></p>
           </div>
         </div>
       ))}
 
-      {/* Botones de navegación */}
+  
       <button onClick={prevSlide} className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/30 hover:bg-white/50 backdrop-blur-sm p-3 rounded-full transition-all duration-300 group z-10">
         <ChevronLeft size={28} className="text-white group-hover:scale-110 transition-transform" />
       </button>
@@ -54,7 +54,7 @@ const SliderHero: React.FC = () => {
         <ChevronRight size={28} className="text-white group-hover:scale-110 transition-transform" />
       </button>
 
-      {/* Indicadores */}
+    
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex space-x-3 z-10">
         {slides.map((_, index) => (
           <button key={index} onClick={() => goToSlide(index)} className={`transition-all duration-300 rounded-full ${index === currentSlide ? 'w-12 h-3 bg-white' : 'w-3 h-3 bg-white/50 hover:bg-white/75'}`} />
