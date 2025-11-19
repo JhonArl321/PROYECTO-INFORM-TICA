@@ -9,7 +9,7 @@ import FAQPage from "./pages/FAQPage";
 import ContactoPage from "./pages/ContactoPage";
 import ScrollToTop from "./components/ScrollToTop";
 import Creadores from "./pages/Creadores"; 
-import Galeria from "./components/Galeria";
+import Galeria from "./components/hero/Galeria";
 
 function App() {
   return (

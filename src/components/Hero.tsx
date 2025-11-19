@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { GraduationCap, ChevronLeft, ChevronRight } from 'lucide-react';
-import Clubes from './Clubes';
-import Galeria from './Galeria';
+import Clubes from './hero/Clubes';
+import Galeria from './hero/Galeria';
 
 
 function Hero() {

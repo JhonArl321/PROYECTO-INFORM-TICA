@@ -1,4 +1,4 @@
-import Clubes from "../components/Clubes"
+import Clubes from "../components/hero/Clubes"
 
 function ClubsPage() {
   return (
