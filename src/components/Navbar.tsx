@@ -97,7 +97,7 @@ function Navbar() {
               { path: "/ayudas", label: "Ayudas Financieras" },
               { path: "/registro", label: "Registro Académico" },
 
-              { path: "/testimonios", label: "Testimonios" },
+              // { path: "/testimonios", label: "Testimonios" },
               { path: "/faq", label: "FAQ" },
             ].map((link) => (
 

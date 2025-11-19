@@ -1,21 +1,20 @@
-import { Routes, Route } from "react-router-dom"
-import Navbar from "./components/Navbar"
-import Footer from "./components/Footer"
-import HomePage from "./pages/HomePage"
-import AyudasPage from "./pages/AyudasPage"
-import RegistroPage from "./pages/RegistroPage"
-import ClubsPage from "./pages/ClubsPage"
-import FAQPage from "./pages/FAQPage"
-import ContactoPage from "./pages/ContactoPage"
-
-
-
-
-
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import HomePage from "./pages/HomePage";
+import AyudasPage from "./pages/AyudasPage";
+import RegistroPage from "./pages/RegistroPage";
+import ClubsPage from "./pages/ClubsPage";
+import FAQPage from "./pages/FAQPage";
+import ContactoPage from "./pages/ContactoPage";
+import ScrollToTop from "./components/ScrollToTop";
+import Creadores from "./pages/Creadores"; // <- aquí el cambio
 
 function App() {
   return (
     <div className="min-h-screen bg-white flex flex-col">
+      <ScrollToTop />  
+
       <Navbar />
       <main className="flex-1 pt-20">
         <Routes>
@@ -25,11 +24,12 @@ function App() {
           <Route path="/clubes" element={<ClubsPage />} />
           <Route path="/faq" element={<FAQPage />} />
           <Route path="/contacto" element={<ContactoPage />} />
+          <Route path="/creadores" element={<Creadores />} />
         </Routes>
       </main>
       <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -1,3 +1,5 @@
+
+
 import { Link } from "react-router-dom"
 
 function Footer() {
@@ -5,6 +7,7 @@ function Footer() {
     <footer className="bg-gray-900 text-gray-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
+          
           <div className="md:col-span-2">
             <h3 className="text-white text-xl font-bold mb-4">Proyecto de Agradecimiento</h3>
             <p className="text-gray-400 mb-4 leading-relaxed">
@@ -19,10 +22,12 @@ function Footer() {
             <h4 className="text-white font-semibold mb-4">Enlaces Rápidos</h4>
             <ul className="space-y-2">
               <li><Link to="/" className="hover:text-green-400 transition-colors">Inicio</Link></li>
-          
-              <li><Link to="/registro" className="hover:text-green-400 transition-colors">Registro Académico</Link></li>
+              <li><Link to="/registro" className="hover:text-green-400 transition-colors">Reingreso</Link></li>
               <li><Link to="/clubes" className="hover:text-green-400 transition-colors">Clubes</Link></li>
               <li><Link to="/faq" className="hover:text-green-400 transition-colors">FAQ</Link></li>
+
+              {/* 🔥 Nuevo enlace aquí */}
+              <li><Link to="/creadores" className="hover:text-green-400 transition-colors">Creadores de la página</Link></li>
             </ul>
           </div>
 
