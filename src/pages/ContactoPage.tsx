@@ -1,4 +1,4 @@
-import Contacto from "../components/Contacto"
+import Contacto from "../components/contacto/Contacto"
 
 function ContactoPage() {
   return (

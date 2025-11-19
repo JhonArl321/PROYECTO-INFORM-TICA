@@ -11,6 +11,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Creadores from "./pages/Creadores"; 
 import Galeria from "./components/hero/Galeria";
 
+
 function App() {
   return (
     <div className="min-h-screen bg-white flex flex-col">
