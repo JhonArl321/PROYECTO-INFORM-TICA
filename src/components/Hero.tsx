@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { GraduationCap, ChevronLeft, ChevronRight } from 'lucide-react';
 
+
 function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -53,7 +54,7 @@ function Hero() {
 
   return (
     <section id="inicio" className="bg-gradient-to-br from-green-50 to-blue-50">
-      {/* <div className="relative w-full h-[500px] sm:h-[600px] overflow-hidden"> */}
+  
         <div className="relative w-full min-h-screen overflow-hidden">
 
         {slides.map((slide, index) => (
@@ -145,8 +146,16 @@ function Hero() {
             </p>
           </div>
 
+
+
+
         </div>
       </div>
+
+
+          
+
+
     </section>
   );
 }

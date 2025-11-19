@@ -31,22 +31,25 @@ function Contacto() {
               </div>
             </div>
             <h3 className="text-xl font-bold text-gray-900 text-center mb-3">
-              Correo Electrónico
+              Nuestros correos
             </h3>
             <p className="text-center text-gray-700 mb-2">Departamento de Becas:</p>
-            <a
-              href="mailto:becas@uvg.edu.gt"
+
+
+            <p
               className="block text-center text-green-700 font-semibold hover:text-green-800 transition-colors"
             >
-              becas@uvg.edu.gt
-            </a>
+              smtale@uvg.edu.gt
+            </p>
+
+
             <p className="text-center text-gray-700 mt-4 mb-2">Registro Académico:</p>
-            <a
-              href="mailto:registro.altiplano@uvg.edu.gt"
+            <p
+
               className="block text-center text-green-700 font-semibold hover:text-green-800 transition-colors"
             >
-              registro.altiplano@uvg.edu.gt
-            </a>
+              gmmacario@uvg.edu.gt
+            </p>
           </div>
 
           <div className="bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition-all border border-blue-100">
@@ -59,15 +62,15 @@ function Contacto() {
               WhatsApp
             </h3>
             <p className="text-center text-gray-700 mb-4">
-              Atención directa para resolver tus dudas
+              Atención a ayudas financieras
             </p>
             <a
-              href="https://wa.me/50212345678"
+              href="https://wa.me/50253048803"
               target="_blank"
               rel="noopener noreferrer"
               className="block text-center bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors"
             >
-              +502 1234 5678
+              +502 5304-8803
             </a>
             <p className="text-center text-gray-600 text-sm mt-4">
               Lunes a Viernes: 8:00 AM - 5:00 PM
@@ -90,7 +93,7 @@ function Contacto() {
               Sololá, Guatemala
             </p>
             <a
-              href="https://www.uvg.edu.gt/altiplano"
+              href="https://altiplano.uvg.edu.gt/"
               target="_blank"
               rel="noopener noreferrer"
               className="block text-center text-orange-700 font-semibold hover:text-orange-800 transition-colors mt-4"
@@ -136,10 +139,6 @@ function Contacto() {
             </a>
           </div>
         </div>
-
-
-
-
 
 
       </div>

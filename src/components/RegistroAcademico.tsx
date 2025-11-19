@@ -1,4 +1,4 @@
-import { ClipboardList, Calendar, AlertTriangle, MessageCircle } from 'lucide-react';
+import { ClipboardList, Calendar, AlertTriangle } from 'lucide-react';
 
 function RegistroAcademico() {
   return (
@@ -149,15 +149,7 @@ function RegistroAcademico() {
               <span>Omitir campos obligatorios</span>
             </div>
           </div>
-          <div className="bg-white p-6 rounded-lg flex items-center justify-between flex-wrap gap-4">
-            <div className="flex items-center">
-              <MessageCircle className="text-green-600 mr-3" size={24} />
-              <span className="text-gray-700">¿Tienes dudas sobre tu inscripción?</span>
-            </div>
-            <button className="bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors">
-              Contactar por WhatsApp
-            </button>
-          </div>
+
         </div>
       </div>
     </section>

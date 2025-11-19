@@ -22,7 +22,6 @@ function Footer() {
               <li><Link to="/ayudas" className="hover:text-green-400 transition-colors">Ayudas Financieras</Link></li>
               <li><Link to="/registro" className="hover:text-green-400 transition-colors">Registro Académico</Link></li>
               <li><Link to="/clubes" className="hover:text-green-400 transition-colors">Clubes</Link></li>
-              <li><Link to="/testimonios" className="hover:text-green-400 transition-colors">Testimonios</Link></li>
               <li><Link to="/faq" className="hover:text-green-400 transition-colors">FAQ</Link></li>
             </ul>
           </div>
@@ -45,12 +44,13 @@ function Footer() {
         </div>
 
         <div className="border-t border-gray-800 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-gray-400 text-sm text-center md:text-left">
-              En recuerdo de los estudiantes del Técnico en Informática de la UVG Altiplano, como muestra de gratitud por el apoyo financiero recibido durante dos años. Página desarrollada en el año 2025.
+          <div className="flex justify-center items-center">
+            <p className="text-gray-400 text-sm text-center">
+              © 2025 — En recuerdo de los estudiantes del Técnico en Informática de la UVG Altiplano, como muestra de gratitud por el apoyo financiero brindado durante dos años.
             </p>
           </div>
         </div>
+
       </div>
     </footer>
   )

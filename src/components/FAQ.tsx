@@ -95,8 +95,12 @@ function FAQ() {
             Nuestro equipo está listo para ayudarte con cualquier duda adicional
           </p>
           <button className="bg-white text-blue-600 font-semibold px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors">
-            Contáctanos Ahora
+            <a href="https://wa.me/53048803" target="_blank">
+              Escríbenos por WhatsApp
+            </a>
+
           </button>
+
         </div>
       </div>
     </section>
