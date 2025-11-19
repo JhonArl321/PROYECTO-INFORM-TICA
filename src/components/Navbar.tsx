@@ -24,7 +24,7 @@ function Navbar() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-[#005c3c] shadow-xl" : "bg-[#006341] shadow-lg"
         }`}
     >
-     
+
       <div className="px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
 
@@ -97,7 +97,6 @@ function Navbar() {
               { path: "/ayudas", label: "Ayudas Financieras" },
               { path: "/registro", label: "Registro Académico" },
 
-              // { path: "/testimonios", label: "Testimonios" },
               { path: "/faq", label: "FAQ" },
             ].map((link) => (
 
@@ -114,7 +113,7 @@ function Navbar() {
 
 
             ))}
-          
+
           </div>
         </div>
       )}

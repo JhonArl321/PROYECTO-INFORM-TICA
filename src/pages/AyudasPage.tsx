@@ -1,4 +1,5 @@
-import AyudasFinancieras from "../components/AyudasFinancieras"
+
+import AyudasFinancieras from "../components/ayudasFinancieras/AyudasFinanceras";
 
 function AyudasPage() {
   return (
