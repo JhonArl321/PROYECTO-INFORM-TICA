@@ -12,7 +12,7 @@ function AyudasFinancieras() {
             Ayudas Financieras
           </h2>
           <p className="text-xl text-gray-600">
-            Oportunidades que transforman vidas
+            Recordamos los siguientes detalles importantes para solicitar y mantener una ayuda financiera en UVG Altiplano.
           </p>
         </div>
 
@@ -112,11 +112,6 @@ function AyudasFinancieras() {
     <Download className="mr-2" size={20} />
     Descargar Guía de Ayuda Financiera (PDF)
   </a>
-
-
-
-
-
 
 
 

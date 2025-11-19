@@ -1,4 +1,4 @@
-import { Users, Lightbulb, Calendar, Heart } from 'lucide-react';
+import { Users, Lightbulb, Calendar} from 'lucide-react';
 
 function Clubes() {
   return (
@@ -16,7 +16,7 @@ function Clubes() {
           </p>
         </div>
 
-        <div className="bg-gradient-to-br from-teal-50 to-blue-50 p-8 sm:p-12 rounded-2xl shadow-lg mb-12">
+        {/* <div className="bg-gradient-to-br from-teal-50 to-blue-50 p-8 sm:p-12 rounded-2xl shadow-lg mb-12">
           <div className="max-w-3xl mx-auto text-center">
             <Heart className="text-teal-600 mx-auto mb-4" size={40} />
             <p className="text-lg sm:text-xl text-gray-700 leading-relaxed">
@@ -24,7 +24,7 @@ function Clubes() {
               Los clubes estudiantiles son espacios donde puedes crecer, aprender nuevas habilidades y formar amistades duraderas.
             </p>
           </div>
-        </div>
+        </div> */}
 
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           <div className="bg-white p-8 rounded-xl shadow-lg border-l-4 border-teal-600">

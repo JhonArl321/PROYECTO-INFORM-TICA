@@ -8,7 +8,8 @@ import ClubsPage from "./pages/ClubsPage";
 import FAQPage from "./pages/FAQPage";
 import ContactoPage from "./pages/ContactoPage";
 import ScrollToTop from "./components/ScrollToTop";
-import Creadores from "./pages/Creadores"; // <- aquí el cambio
+import Creadores from "./pages/Creadores"; 
+import Galeria from "./components/Galeria";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/faq" element={<FAQPage />} />
           <Route path="/contacto" element={<ContactoPage />} />
           <Route path="/creadores" element={<Creadores />} />
+          <Route path="/galeria" element={<Galeria />} />
         </Routes>
       </main>
       <Footer />

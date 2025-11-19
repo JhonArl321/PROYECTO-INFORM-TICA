@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { GraduationCap, ChevronLeft, ChevronRight } from 'lucide-react';
 import Clubes from './Clubes';
+import Galeria from './Galeria';
 
 
 function Hero() {
@@ -25,11 +26,7 @@ function Hero() {
       subtitle: 'Becas que transforman vidas'
     },
 
-    {
-      image: '/imagen4.jpeg',
-      title: 'Innovación y Emprendimiento',
-      subtitle: 'Desarrollar prototipos'
-    }
+  
 
   ];
 
@@ -151,6 +148,7 @@ function Hero() {
 
 
       <Clubes />
+      <Galeria />
 
 
     </section>
