@@ -13,12 +13,12 @@ function DescargasCard() {
             </a>
 
             <a
-                href="/instructivospdf/inscripcion.pdf"
-                download="Instructivo_inscripcion_UVG.pdf"
+                href="/instructivospdf/asignacionCursos.pdf"
+                download="Instructivo_asignacionCursos_UVG.pdf"
                 className="animate-wobble flex justify-center items-center bg-green-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:scale-105 transition-all w-full max-w-xs text-center"
             >
                 <Download className="mr-2" size={20} />
-                Descargar instructivo de Inscripción
+                Descargar instructivo de asignacion de cursos
             </a>
 
         </div>
