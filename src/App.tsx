@@ -3,7 +3,7 @@ import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import HomePage from "./pages/HomePage";
 import AyudasPage from "./pages/AyudasPage";
-import RegistroPage from "./pages/RegistroPage";
+import RegistroPage from "./pages/ReingresoPage";
 import ClubsPage from "./pages/ClubsPage";
 import FAQPage from "./pages/FAQPage";
 import ContactoPage from "./pages/ContactoPage";

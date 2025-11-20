@@ -1,9 +1,9 @@
-import RegistroAcademico from "../components/Reingreso"
+import Reingreso from "../components/reingreso/Reingreso"
 
 function RegistroPage() {
   return (
     <div className="w-full">
-      <RegistroAcademico />
+      <Reingreso />
     </div>
   )
 }
