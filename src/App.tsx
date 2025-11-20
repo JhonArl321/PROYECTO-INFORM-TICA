@@ -12,6 +12,7 @@ import Creadores from "./pages/Creadores";
 import Galeria from "./components/hero/Galeria";
 
 
+
 function App() {
   return (
     <div className="min-h-screen bg-white flex flex-col">
@@ -28,6 +29,7 @@ function App() {
           <Route path="/contacto" element={<ContactoPage />} />
           <Route path="/creadores" element={<Creadores />} />
           <Route path="/galeria" element={<Galeria />} />
+         
         </Routes>
       </main>
       <Footer />
