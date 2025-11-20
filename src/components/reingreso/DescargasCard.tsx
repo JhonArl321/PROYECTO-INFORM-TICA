@@ -6,7 +6,7 @@ function DescargasCard() {
             <a
                 href="/instructivospdf/inscripcion.pdf"
                 download="Instructivo_inscripcion_UVG.pdf"
-                className="animate-wobble inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:scale-105 transition-all w-full max-w-xs text-center"
+                className="animate-wobble inline-flex items-center bg-purple-600 hover:bg-black text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:scale-105 transition-all w-full max-w-xs text-center"
             >
                 <Download className="mr-2" size={20} />
                 Descargar instructivo de Inscripción
