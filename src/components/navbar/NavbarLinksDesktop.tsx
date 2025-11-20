@@ -12,7 +12,7 @@ export default function NavbarLinksDesktop({ navigateTo }: NavbarLinksDesktopPro
   const links = [
     { path: "/", label: "Inicio" },
     { path: "/ayudas", label: "Ayudas Financieras" },
-    { path: "/registro", label: "Registro Académico" },
+    { path: "/registro", label: "Reingreso" },
     { path: "/faq", label: "FAQ" },
   ];
 

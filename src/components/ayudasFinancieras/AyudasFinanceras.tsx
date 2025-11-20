@@ -30,12 +30,13 @@ export default function AyudasFinancieras() {
           <a
             href="/guiaAyudaFinanciera.pdf"
             download="Guia_de_Ayuda_Financiera_UVG.pdf"
-            className="inline-flex items-center bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition-all hover:scale-105 mx-auto"
+            className="animate-wobble inline-flex items-center bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition-all hover:scale-105 mx-auto"
           >
             <Download className="mr-2" size={20} />
             Descargar Guía de Ayuda Financiera (PDF)
           </a>
         </div>
+
       </div>
     </section>
   );
