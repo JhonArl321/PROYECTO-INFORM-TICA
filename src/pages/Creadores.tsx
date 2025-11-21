@@ -6,17 +6,18 @@ type Creador = {
   foto: string;
 };
 
+// aqui va la foto de los creadores 
 const Creadores: React.FC = () => {
   const creadores: Creador[] = [
-    { nombre: "Juan Alfonso Ralios Larios", rol: "Desarrollador", foto: "/creadoresPagina/juan.jpeg" },
-    { nombre: "Nombre 2", rol: "Rol del creador", foto: "/imgs/creador2.jpg" },
-    { nombre: "Nombre 3", rol: "Rol del creador", foto: "/imgs/creador3.jpg" },
-    { nombre: "Nombre 4", rol: "Rol del creador", foto: "/imgs/creador4.jpg" },
-    { nombre: "Nombre 5", rol: "Rol del creador", foto: "/imgs/creador5.jpg" },
-    { nombre: "Nombre 6", rol: "Rol del creador", foto: "/imgs/creador6.jpg" },
-    { nombre: "Nombre 7", rol: "Rol del creador", foto: "/imgs/creador7.jpg" },
-    { nombre: "Nombre 8", rol: "Rol del creador", foto: "/imgs/creador8.jpg" },
-    { nombre: "Nombre 9", rol: "Rol del creador", foto: "/imgs/creador9.jpg" },
+    { nombre: "Juan Alfonso Ralios Larios", rol: "Diseñador & Desarrollador", foto: "/creadoresPagina/juan.jpeg" },
+    { nombre: " ", rol: " ", foto: " " },
+    { nombre: " ", rol: " ", foto: " " },
+    { nombre: " ", rol: " ", foto: " " },
+    { nombre: " ", rol: " ", foto: " " },
+    { nombre: " ", rol: " ", foto: " " },
+    { nombre: " ", rol: " ", foto: " " },
+    { nombre: " ", rol: "", foto: " " },
+    { nombre: " ", rol: " ", foto: " " },
   ];
 
   return (
